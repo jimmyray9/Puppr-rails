@@ -13,6 +13,6 @@ class LoginController < ApplicationController
   private
 
   def wechat_params
-    {appid:"wx9907b4461ceeeee9", secret:"f1df82dee8dfa9232df22129c4747846", js_code:params[:code], grant_type:"authorization_code" }
+    {appid:ENV['APP_ID'], secret:ENV['SECRET'], js_code:params[:code], grant_type:"authorization_code" }
   end
 end
