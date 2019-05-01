@@ -6,7 +6,7 @@ class CreateAppointments < ActiveRecord::Migration[5.2]
       t.string :start_time
       t.string :date
       t.string :location
-      t.boolean :is_schedeuled
+      t.boolean :is_scheduled
       t.string :comment
       t.integer :rating
       t.references :walker, foreign_key: true

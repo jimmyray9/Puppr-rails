@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_05_01_053644) do
     t.string "start_time"
     t.string "date"
     t.string "location"
-    t.boolean "is_schedeuled"
+    t.boolean "is_scheduled"
     t.string "comment"
     t.integer "rating"
     t.bigint "walker_id"
