@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_30_044100) do
-
+ActiveRecord::Schema.define(version: 2019_05_01_053644) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_04_30_044100) do
   create_table "appointments", force: :cascade do |t|
     t.integer "duration"
     t.string "note"
-    t.datetime "start_time"
-    t.datetime "date"
+    t.string "start_time"
+    t.string "date"
     t.string "location"
-    t.boolean "is_scheduled"
+    t.boolean "is_schedeuled"
     t.string "comment"
     t.integer "rating"
     t.bigint "walker_id"
@@ -43,13 +42,6 @@ ActiveRecord::Schema.define(version: 2019_04_30_044100) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["owner_id"], name: "index_dogs_on_owner_id"
-  end
-
-  create_table "dogs_appointments", id: false, force: :cascade do |t|
-    t.bigint "dog_id"
-    t.bigint "appointment_id"
-    t.index ["appointment_id"], name: "index_dogs_appointments_on_appointment_id"
-    t.index ["dog_id"], name: "index_dogs_appointments_on_dog_id"
   end
 
   create_table "owners", force: :cascade do |t|
@@ -82,6 +74,17 @@ ActiveRecord::Schema.define(version: 2019_04_30_044100) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "walks", force: :cascade do |t|
+    t.bigint "dog_id"
+    t.bigint "appointment_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["appointment_id"], name: "index_walks_on_appointment_id"
+    t.index ["dog_id"], name: "index_walks_on_dog_id"
+  end
+
   add_foreign_key "appointments", "walkers"
   add_foreign_key "dogs", "owners"
+  add_foreign_key "walks", "appointments"
+  add_foreign_key "walks", "dogs"
 end

@@ -1,4 +1,5 @@
 class Appointment < ApplicationRecord
   belongs_to :walker
-  has_and_belongs_to_many :dogs
+  has_many :walks 
+  has_many :dogs, through :walks
 end
