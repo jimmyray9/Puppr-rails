@@ -7,7 +7,7 @@ class Api::V1::LoginController < Api::V1::BaseController
 
   def login
     @user = User.find_or_create_by(open_id: wechat_user.fetch("openid"))
-    renderjson:{ userId: @user.id }
+    render json:{ userId: @user.id }
   end
 
   private
