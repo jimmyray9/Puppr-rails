@@ -50,7 +50,7 @@ class Api::V1::AppointmentsController < Api::V1::BaseController
     end
 
     def appointment_params
-        params.require(:appointment).permit(:duration, :note, :start_time, :date, :location, :is_scheduled, :comment, :rating :address, :duration, :walker_id)
+        params.require(:appointment).permit(:duration, :note, :start_time, :date, :location, :is_scheduled, :comment, :rating, :duration, :walker_id)
     end
 
     def render_error
