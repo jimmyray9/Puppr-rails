@@ -1,4 +1,5 @@
 class Dog < ApplicationRecord
   belongs_to :owner
-  has_and_belongs_to_many :appointments
+  has_many :walks 
+  has_many :appointments, through :walks
 end
