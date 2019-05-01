@@ -11,7 +11,7 @@ url = 'https://dog.ceo/api/breeds/image/random'
 result = open(url).read
 parsed = JSON.parse(result)['message']
 
-_comment_array = ["Great job with my puppy!", "My dog was so happy to get outside. No problems.", "Seemed to love animals and treated my dog so well",
+comment_array = ["Great job with my puppy!", "My dog was so happy to get outside. No problems.", "Seemed to love animals and treated my dog so well",
                     "Took care of my pup while I was away, definitely knew what they were doing!", "Nice job.", "Had some extra treats for my pup, so sweet!",
                     "Was patient with my dog who can be difficult.", "Knew exactly how to treat my dog, will use again!", "Awesome!", "Good job.", "Happy with the service"]
 
@@ -41,11 +41,10 @@ end
             walker_id: (1..20).to_a.sample,
             duration: [15, 20, 25, 30, 45, 60, 90].sample ,
             note: ["Don't walk if its raining", "Bring some treats please!", "", "Doesn't play well with others", "The lease is next to the door."].sample,
-            start_time: (07..18).to_a.sample.to_s + ":" + ["00","15","30", "60"],
+            start_time: (07..18).to_a.sample.to_s + ":" + ["00","15","30", "60"].sample.to_s,
             date: Date.today() + rand(7),
             location: Faker::Address.street_address ,
             is_scheduled: [true, false].sample,
-            comment: comment_array.sample,
             rating: (3..5).to_a.sample 
         })
         appointment.save
@@ -59,8 +58,7 @@ end
             size: ['SMALL', 'MEDIUM', 'LARGE'].sample,
             gender: ['M', 'F'].sample,
             pic: parsed, 
-            owner_id: user.id,
-            appointment_id: appointment.id
+            owner_id: (1..20).to_a.sample,
         })
         dog.save
     end
@@ -72,7 +70,7 @@ end
         walker_id: (1..20).to_a.sample,
         duration: [15, 20, 25, 30, 45, 60, 90].sample ,
         note: ["Don't walk if its raining", "Bring some treats please!", "", "Doesn't play well with others", "The lease is next to the door."].sample,
-        start_time: (07..18).to_a.sample.to_s + ":" + ["00","15","30", "60"],
+        start_time: (07..18).to_a.sample.to_s + ":" + ["00","15","30", "60"].sample.to_s,
         date: Date.today() - rand(15),
         location: Faker::Address.street_address ,
         is_scheduled: [true, false].sample,
