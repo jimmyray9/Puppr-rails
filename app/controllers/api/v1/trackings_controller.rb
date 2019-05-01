@@ -1,4 +1,4 @@
-class TrackingsController < ApplicationController
+class Api::V1::TrackingsController < Api::V1::BaseController
   before_action :set_tracking, only: [:show, :update, :destroy]
 
   def index
