@@ -1,4 +1,4 @@
-class OwnersController < ApplicationController
+class Api::V1::OwnersController < Api::V1::BaseController
   before_action :set_owner, only: [:show, :update, :destroy]
 
   def index

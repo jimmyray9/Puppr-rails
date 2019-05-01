@@ -1,4 +1,4 @@
-class AppointmentsController < ApplicationController
+class Api::V1::AppointmentsController < Api::V1::BaseController
     before_action :set_appointment, only: [:show, :update, :destroy]
     def index
         @walker = walker.find(params[:walker_id])

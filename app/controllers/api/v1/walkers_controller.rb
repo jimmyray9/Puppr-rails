@@ -1,4 +1,4 @@
-class WalkersController < ApplicationController
+class Api::V1::WalkersController < Api::V1::BaseController
   before_action :set_walker, only: [:show, :update, :destroy]
 
   def index

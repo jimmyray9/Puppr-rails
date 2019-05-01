@@ -1,4 +1,4 @@
-class LoginController < ApplicationController
+class Api::V1::LoginController < Api::V1::BaseController
   def wechat_user
     URL = "https://api.weixin.qq.com/sns/jscode2session".freeze
     @wechat_response||= RestClient.post(URL, wechat_params)

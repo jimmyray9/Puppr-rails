@@ -1,4 +1,4 @@
-class DogsController < ApplicationController
+class Api::V1::DogsController < Api::V1::BaseController
     before_action :set_dog, only: [:show, :update, :destroy]
     def index
         @owner = Owner.find(params[:owner_id])
