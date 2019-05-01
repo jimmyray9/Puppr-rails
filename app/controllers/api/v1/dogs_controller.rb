@@ -4,8 +4,8 @@ class Api::V1::DogsController < Api::V1::BaseController
         @owner = Owner.find(params[:owner_id])
         @dogs = Dog.all
         @array = []
-        @dogs.map do |dog|
-        @array << dog if dog.owner == @owner
+        @dogs.each do |dog|
+            @array << dog if dog.owner == @owner
         end
         render json: @array
     end
