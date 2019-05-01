@@ -1,7 +1,7 @@
 class Api::V1::AppointmentsController < Api::V1::BaseController
     before_action :set_appointment, only: [:show, :update, :destroy]
     def index
-        @walker = walker.find(params[:walker_id])
+        @walker = Walker.find(params[:walker_id])
         @appointments = Appointment.all
         @array = []
         @appointments.each do |appointment|
@@ -11,12 +11,12 @@ class Api::V1::AppointmentsController < Api::V1::BaseController
     end
 
     def show
-        @walker = walker.find(params[:walker_id])
+        @walker = Walker.find(params[:walker_id])
         render json: @appointment if @appointment.walker == @walker
     end
 
     def update
-        @walker = walker.find(params[:walker_id])
+        @walker = Walker.find(params[:walker_id])
         @appointment.walker = @walker
 
         if @appointment.update(appointment_params)
@@ -28,7 +28,7 @@ class Api::V1::AppointmentsController < Api::V1::BaseController
 
     def create
         @appointment = Appointment.new(appointment_params)
-        @walker = walker.find(params[:walker_id])
+        @walker = Walker.find(params[:walker_id])
         @appointment.walker = @walker
 
         if @appointment.save
