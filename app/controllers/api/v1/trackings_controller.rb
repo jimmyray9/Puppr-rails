@@ -1,49 +1,58 @@
 class Api::V1::TrackingsController < Api::V1::BaseController
   before_action :set_tracking, only: [:show, :update, :destroy]
-
-  def index
-    @trackings = Tracking.all
-    render json: @trackings
-  end
-
-  def show
-    render json: @tracking
-  end
-
-  def update
-    if @tracking.update(tracking_params)
-      render json: @tracking
-    else
-      render_error
+    def index
+        @appointment = Appointment.find(params[:appointment_id])
+        @trackings = Tracking.all
+        @array = []
+        @trackings.each do |tracking|
+            @array << tracking if tracking.appointment == @appointment
+        end
+        render json: @array
     end
-  end
 
-  def create
-    @tracking = Tracking.new(tracking_params)
-    if @tracking.save
-      render json: @tracking, status: :created
-    else
-      render_error
+    def show
+        @appointment = Appointment.find(params[:appointment_id])
+        render json: @tracking if @tracking.appointment == @appointment
     end
-  end
 
-  def destroy
-    @tracking.destroy
-    head :no_content
-  end
+    def update
+        @appointment = Appointment.find(params[:appointment_id])
+        @tracking.appointment = @appointment
+        if @tracking.update(tracking_params)
+        render json: @tracking
+        else
+        render_error
+        end
+    end
 
-  private
+    def create
+        @appointment = Appointment.find(params[:appointment_id])
+        @tracking = Tracking.new(tracking_params)
+        @tracking.appointment = @appointment
+        if @tracking.save
+        render json: @tracking, status: :created
+        else
+        render_error
+        end
+    end
 
-  def set_tracking
-    @tracking = Tracking.find(params[:id])
-  end
+    def destroy
+        @tracking.destroy
+        head :no_content
+    end
 
-   def tracking_params
-    params.require(:tracking).permit(:latitude, :longitude)
-  end
+    private
 
-  def render_error
-    render json: { errors: @tracking.errors.full_messages }, status: :unprocessable_entity
-  end
+    def set_tracking
+        @tracking = Tracking.find(params[:id])
+    end
+
+    def tracking_params
+        params.require(:tracking).permit(:latitude, :longitude, :appointment_id)
+    end
+
+    def render_error
+        render json: { errors: @tracking.errors.full_messages }, status: :unprocessable_entity
+    end
 end
 

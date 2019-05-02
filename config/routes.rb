@@ -7,7 +7,9 @@ Rails.application.routes.draw do
         resources :dogs
       end
       resources :walkers do
-        resources :appointments
+        resources :appointments do 
+          resources :trackings
+        end
       end
     end
   end
