@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_01_053644) do
+ActiveRecord::Schema.define(version: 2019_05_02_030153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,10 +52,12 @@ ActiveRecord::Schema.define(version: 2019_05_01_053644) do
   end
 
   create_table "trackings", force: :cascade do |t|
-    t.float "latitude"
-    t.float "longitude"
+    t.string "longitude"
+    t.string "latitude"
+    t.bigint "appointment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["appointment_id"], name: "index_trackings_on_appointment_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -85,6 +87,7 @@ ActiveRecord::Schema.define(version: 2019_05_01_053644) do
 
   add_foreign_key "appointments", "walkers"
   add_foreign_key "dogs", "owners"
+  add_foreign_key "trackings", "appointments"
   add_foreign_key "walks", "appointments"
   add_foreign_key "walks", "dogs"
 end
