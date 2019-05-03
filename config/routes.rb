@@ -11,6 +11,7 @@ Rails.application.routes.draw do
           resources :trackings
         end
       end
+      resources :walks
     end
   end
 end
