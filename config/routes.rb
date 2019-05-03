@@ -5,12 +5,10 @@ Rails.application.routes.draw do
       post '/login', to: "login#login", as: :login
       resources :owners do
         resources :dogs
-        resources :walks
       end
       resources :walkers do
         resources :appointments do 
           resources :trackings
-          resources :walks
         end
       end
       resources :walks
