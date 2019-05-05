@@ -23,8 +23,8 @@ comment_array = ["Great job with my puppy!", "My dog was so happy to get outside
 
 description_array = ["A bit aggressive at times but overall quite nice!", "Such a sweetie!", "Obeys commands easily.", "She can be a bit naughty at times",
                     "Loves to be outside.", "Doesn't really listen well.", "Getting old so go slow", "Puppy full of energy and wants to play!", "Gentle soul", "A bit timid at times"]
-
-img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/2ce9e41c2174cea45a5e/Screen%20Shot%202019-05-05%20at%206.27.07%20PM.png",
+                    
+img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%202019-05-05%20at%206.43.22%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/1b64fdd05bf1fbff51a4/Screen%20Shot%202019-05-05%20at%206.27.53%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/1f2b4c2e65fb070ea791/Screen%20Shot%202019-05-05%20at%206.27.41%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/f51dd195cafa961211a8/Screen%20Shot%202019-05-05%20at%206.28.10%20PM.png",
@@ -42,8 +42,8 @@ img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/2ce9e41c2174cea45a5e/Screen%20Shot%2
 "http://lc-dkmjoglx.cn-n1.lcfile.com/25dfc480c1993e53dc35/Screen%20Shot%202019-05-05%20at%206.30.16%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/032c6be2fe015227661c/Screen%20Shot%202019-05-05%20at%206.30.27%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/bf81fa598d3a3d478f23/Screen%20Shot%202019-05-05%20at%206.29.21%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/0be974fd3bd0f49f88c5/casual-college-connection-1438081.jpg",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%202019-05-05%20at%206.43.22%20PM.png"]
+"http://lc-dkmjoglx.cn-n1.lcfile.com/c8e7201e172bd02ddd2c/Screen%20Shot%202019-05-05%20at%207.09.21%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/2ce9e41c2174cea45a5e/Screen%20Shot%202019-05-05%20at%206.27.07%20PM.png"]
 
 20.times do
     user = Walker.new({
