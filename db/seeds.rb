@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'open-uri'
+puts "start"
 
 url = 'https://dog.ceo/api/breeds/image/random'
 result = open(url).read
@@ -22,8 +23,28 @@ description_array = ["A bit aggressive at times but overall quite nice!", "Such 
     user = Walker.new({
         name: Faker::FunnyName.name,
         phone: "1" + rand(10 ** 10).to_s,
-        zip_code: ['610000', '610012', '610013', '610014', '610015', '610016','610043', '610036', '610041', ].sample,
-        pic: 'https://randomuser.me/api/portraits/' + ['women/','men/'].sample + rand(99).to_s + '.jpg',
+        address: "fjkfjkdjfdkghkfghk",
+        pic: ["http://lc-dkmjoglx.cn-n1.lcfile.com/6e2021fa0482a3660248/adult-background-casual-941693.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/e1eafefd8c4a5613d655/collared-shirt-handsome-indoors-936229.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/6e2021fa0482a3660248/adult-background-casual-941693.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/db0412837644dd43f597/casual-college-connection-1438081.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/8811e378406628ea7e60/adult-boy-casual-220453.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/2bda7ef20a38f9ffa158/black-leather-jacket-blur-bracelet-775358.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/2f5a7aacd7806a196910/black-and-white-fun-good-looking-91227.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/0a1bd6eb41aa279ac520/adult-blur-boy-1212984.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/43e1be65c974e2ecf365/black-and-white-boy-casual-555790.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/553363eb1328aa17a929/adult-businessman-contemporary-937481.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/a630f99ee72a2ae06261/adult-blurred-background-checkered-shirt-936072.jpg",
+        "https://leancloud.cn/dashboard/data.html?appid=DkmjoGlxMjnfPDQafHuUytF7-gzGzoHsz#/_File",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/9a4de3810d7cea9b95e4/beautiful-brunette-cute-774909.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/6c05381f587df264ca49/attractive-beautiful-beauty-1820574.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/63d660ba66ca43a9852c/attractive-beautiful-casual-1082962.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/e6318fa0eb3d0281980d/adult-beautiful-blond-hair-1130626.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/f5c838a6e2c23fccf610/beautiful-beauty-brazilian-woman-1102341.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/c873d3460f7f5e5eda25/adorable-casual-cute-1752134.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/6cd8fe93b03d1bf56b63/adult-asian-bar-323503.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/4e9c6dd05c943b85882a/beautiful-beauty-blond-1587009.jpg",
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/bf4342d97806d4482039/beautiful-beautiful-woman-beauty-1566554.jpg"].sample,
         avg_rating: ((3..4).to_a.sample.to_s + "." + (0..9).to_a.sample.to_s).to_f
     })
     user.save
@@ -32,8 +53,7 @@ end
 20.times do
     user = Owner.create({
         name: Faker::FunnyName.name,
-        zip_code: ['610000', '610012', '610013', '610014', '610015', '610016','610043', '610036', '610041', ].sample,
-
+        address: "sdasdadasdsaa",
     })
     user.save
     4.times do 
@@ -79,3 +99,4 @@ end
     })
     appointment.save
 end
+puts "end"
