@@ -26,7 +26,6 @@ description_array = ["A bit aggressive at times but overall quite nice!", "Such 
 
 img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/6e2021fa0482a3660248/adult-background-casual-941693.jpg",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/e1eafefd8c4a5613d655/collared-shirt-handsome-indoors-936229.jpg",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/6e2021fa0482a3660248/adult-background-casual-941693.jpg",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/db0412837644dd43f597/casual-college-connection-1438081.jpg",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/8811e378406628ea7e60/adult-boy-casual-220453.jpg",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/2bda7ef20a38f9ffa158/black-leather-jacket-blur-bracelet-775358.jpg",
