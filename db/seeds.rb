@@ -8,6 +8,11 @@
 require 'open-uri'
 puts "start"
 
+Walker.destroy_all!
+Owner.destroy_all!
+Appointment.destroy_all!
+Dog.destroy_all!
+
 url = 'https://dog.ceo/api/breeds/image/random'
 result = open(url).read
 parsed = JSON.parse(result)['message']
@@ -69,7 +74,6 @@ end
         })
         appointment.save
     end
-    (1..2).to_a.sample.times do
         dog = Dog.create({
             name: Faker::Creature::Dog.name,
             breed: Faker::Creature::Dog.breed,
@@ -81,7 +85,6 @@ end
             owner_id: (1..20).to_a.sample,
         })
         dog.save
-    end
    
 end
 
