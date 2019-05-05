@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_03_055924) do
+ActiveRecord::Schema.define(version: 2019_05_05_065247) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_05_03_055924) do
     t.bigint "walker_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "is_completed"
     t.index ["walker_id"], name: "index_appointments_on_walker_id"
   end
 
@@ -46,7 +47,7 @@ ActiveRecord::Schema.define(version: 2019_05_03_055924) do
 
   create_table "owners", force: :cascade do |t|
     t.string "name"
-    t.string "zip_code"
+    t.string "address"
     t.string "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -58,6 +59,7 @@ ActiveRecord::Schema.define(version: 2019_05_03_055924) do
     t.bigint "appointment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "address"
     t.index ["appointment_id"], name: "index_trackings_on_appointment_id"
   end
 
