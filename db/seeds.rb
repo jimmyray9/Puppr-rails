@@ -8,10 +8,10 @@
 require 'open-uri'
 puts "start"
 
-Walker.destroy_all!
-Owner.destroy_all!
-Appointment.destroy_all!
-Dog.destroy_all!
+Walker.destroy_all
+Owner.destroy_all
+Appointment.destroy_all
+Dog.destroy_all
 
 url = 'https://dog.ceo/api/breeds/image/random'
 result = open(url).read
