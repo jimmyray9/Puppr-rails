@@ -49,7 +49,7 @@ description_array = ["A bit aggressive at times but overall quite nice!", "Such 
         "http://lc-dkmjoglx.cn-n1.lcfile.com/c873d3460f7f5e5eda25/adorable-casual-cute-1752134.jpg",
         "http://lc-dkmjoglx.cn-n1.lcfile.com/6cd8fe93b03d1bf56b63/adult-asian-bar-323503.jpg",
         "http://lc-dkmjoglx.cn-n1.lcfile.com/4e9c6dd05c943b85882a/beautiful-beauty-blond-1587009.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/bf4342d97806d4482039/beautiful-beautiful-woman-beauty-1566554.jpg"].sample,
+        "http://lc-dkmjoglx.cn-n1.lcfile.com/bf4342d97806d4482039/beautiful-beautiful-woman-beauty-1566554.jpg"].shift,
         avg_rating: ((3..4).to_a.sample.to_s + "." + (0..9).to_a.sample.to_s).to_f
     })
     user.save
