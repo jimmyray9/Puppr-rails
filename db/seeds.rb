@@ -27,7 +27,7 @@ description_array = ["A bit aggressive at times but overall quite nice!", "Such 
 img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%202019-05-05%20at%206.43.22%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/1b64fdd05bf1fbff51a4/Screen%20Shot%202019-05-05%20at%206.27.53%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/1f2b4c2e65fb070ea791/Screen%20Shot%202019-05-05%20at%206.27.41%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/f51dd195cafa961211a8/Screen%20Shot%202019-05-05%20at%206.28.10%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/c8e7201e172bd02ddd2c/Screen%20Shot%202019-05-05%20at%207.09.21%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/d4130a59292a6ae1a208/Screen%20Shot%202019-05-05%20at%206.30.04%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/d3b1aa0ce24b324d4683/Screen%20Shot%202019-05-05%20at%206.29.47%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/487fea340a5bc83d156e/Screen%20Shot%202019-05-05%20at%206.29.35%20PM.png",
@@ -43,7 +43,7 @@ img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%2
 "http://lc-dkmjoglx.cn-n1.lcfile.com/032c6be2fe015227661c/Screen%20Shot%202019-05-05%20at%206.30.27%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/bf81fa598d3a3d478f23/Screen%20Shot%202019-05-05%20at%206.29.21%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/c8e7201e172bd02ddd2c/Screen%20Shot%202019-05-05%20at%207.09.21%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/2ce9e41c2174cea45a5e/Screen%20Shot%202019-05-05%20at%206.27.07%20PM.png"]
+"http://lc-dkmjoglx.cn-n1.lcfile.com/f51dd195cafa961211a8/Screen%20Shot%202019-05-05%20at%206.28.10%20PM.png"]
 
 20.times do
     user = Walker.new({
