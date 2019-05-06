@@ -17,12 +17,9 @@ url = 'https://dog.ceo/api/breeds/image/random'
 result = open(url).read
 parsed = JSON.parse(result)['message']
 
-comment_array = ["Great job with my puppy!", "My dog was so happy to get outside. No problems.", "Seemed to love animals and treated my dog so well",
-                    "Took care of my pup while I was away, definitely knew what they were doing!", "Nice job.", "Had some extra treats for my pup, so sweet!",
-                    "Was patient with my dog who can be difficult.", "Knew exactly how to treat my dog, will use again!", "Awesome!", "Good job.", "Happy with the service"]
+comment_array = ["Great job with my puppy!", "My dog was so happy to get outside. No problems.", "Seemed to love animals and treated my dog so well","Took care of my pup while I was away, definitely knew what they were doing!", "Nice job.", "Had some extra treats for my pup, so sweet!","Was patient with my dog who can be difficult.", "Knew exactly how to treat my dog, will use again!", "Awesome!", "Good job.", "Happy with the service"]
 
-description_array = ["A bit aggressive at times but overall quite nice!", "Such a sweetie!", "Obeys commands easily.", "She can be a bit naughty at times",
-                    "Loves to be outside.", "Doesn't really listen well.", "Getting old so go slow", "Puppy full of energy and wants to play!", "Gentle soul", "A bit timid at times"]
+description_array = ["A bit aggressive at times but overall quite nice!", "Such a sweetie!", "Obeys commands easily.", "She can be a bit naughty at times","Loves to be outside.", "Doesn't really listen well.", "Getting old so go slow", "Puppy full of energy and wants to play!", "Gentle soul", "A bit timid at times"]
                     
 img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%202019-05-05%20at%206.43.22%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/1b64fdd05bf1fbff51a4/Screen%20Shot%202019-05-05%20at%206.27.53%20PM.png",
@@ -61,6 +58,22 @@ end
 first = Walker.first.id
 last = first + 19
 
+10.times do 
+    appointment = Appointment.create({
+        walker_id: (first..last).to_a.sample,
+        duration: [15, 20, 25, 30, 45, 60, 90].sample ,
+        note: ["Don't walk if its raining", "Bring some treats please!", "", "Doesn't play well with others", "The lease is next to the door."].sample,
+        start_time: (07..18).to_a.sample.to_s + ":" + ["00","15","30", "60"].sample.to_s,
+        date: Date.today() - rand(15),
+        location: location.sample,
+        is_scheduled: [true, false].sample,
+        is_completed: true,
+        comment: comment_array.sample,
+        rating: (3..5).to_a.sample 
+    })
+    appointment.save
+end
+
 20.times do
     user = Owner.create({
         name: Faker::FunnyName.name,
@@ -78,8 +91,9 @@ last = first + 19
             note: ["Don't walk if its raining", "Bring some treats please!", "", "Doesn't play well with others", "The lease is next to the door."].sample,
             start_time: (07..18).to_a.sample.to_s + ":" + ["00","15","30", "60"].sample.to_s,
             date: Date.today() + rand(7),
-            location: Faker::Address.street_address ,
+            location: Faker::Address.street_address,
             is_scheduled: [true, false].sample,
+            is_completed: false,
             rating: (3..5).to_a.sample 
         })
         appointment.save
@@ -98,18 +112,4 @@ last = first + 19
    
 end
 
-10.times do 
-    appointment = Appointment.create({
-        walker_id: (first..last).to_a.sample,
-        duration: [15, 20, 25, 30, 45, 60, 90].sample ,
-        note: ["Don't walk if its raining", "Bring some treats please!", "", "Doesn't play well with others", "The lease is next to the door."].sample,
-        start_time: (07..18).to_a.sample.to_s + ":" + ["00","15","30", "60"].sample.to_s,
-        date: Date.today() - rand(15),
-        location: location.sample,
-        is_scheduled: [true, false].sample,
-        comment: comment_array.sample,
-        rating: (3..5).to_a.sample 
-    })
-    appointment.save
-end
 puts "end"
