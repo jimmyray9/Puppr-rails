@@ -23,33 +23,34 @@ comment_array = ["Great job with my puppy!", "My dog was so happy to get outside
 
 description_array = ["A bit aggressive at times but overall quite nice!", "Such a sweetie!", "Obeys commands easily.", "She can be a bit naughty at times",
                     "Loves to be outside.", "Doesn't really listen well.", "Getting old so go slow", "Puppy full of energy and wants to play!", "Gentle soul", "A bit timid at times"]
+                    
+img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%202019-05-05%20at%206.43.22%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/1b64fdd05bf1fbff51a4/Screen%20Shot%202019-05-05%20at%206.27.53%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/1f2b4c2e65fb070ea791/Screen%20Shot%202019-05-05%20at%206.27.41%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/c8e7201e172bd02ddd2c/Screen%20Shot%202019-05-05%20at%207.09.21%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/d4130a59292a6ae1a208/Screen%20Shot%202019-05-05%20at%206.30.04%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/d3b1aa0ce24b324d4683/Screen%20Shot%202019-05-05%20at%206.29.47%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/487fea340a5bc83d156e/Screen%20Shot%202019-05-05%20at%206.29.35%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/9e0023a8ac2bc1eae48e/Screen%20Shot%202019-05-05%20at%206.29.11%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/6f8f7e270fece71bd7ce/Screen%20Shot%202019-05-05%20at%206.28.51%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/7a94eb80f528f1ca805c/Screen%20Shot%202019-05-05%20at%206.28.21%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/9327c2aa96e7eaebbcdf/Screen%20Shot%202019-05-05%20at%206.28.34%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/f1e82a60631249b6c233/Screen%20Shot%202019-05-05%20at%206.31.24%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/48ded9de17d0644a5527/Screen%20Shot%202019-05-05%20at%206.31.01%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/25d807aad3c3f07b924e/Screen%20Shot%202019-05-05%20at%206.31.14%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/8c3c254278f0e31abe29/Screen%20Shot%202019-05-05%20at%206.30.38%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/25dfc480c1993e53dc35/Screen%20Shot%202019-05-05%20at%206.30.16%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/032c6be2fe015227661c/Screen%20Shot%202019-05-05%20at%206.30.27%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/bf81fa598d3a3d478f23/Screen%20Shot%202019-05-05%20at%206.29.21%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/f51dd195cafa961211a8/Screen%20Shot%202019-05-05%20at%206.28.10%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/2ce9e41c2174cea45a5e/Screen%20Shot%202019-05-05%20at%206.27.07%20PM.png"]
 
 20.times do
     user = Walker.new({
         name: Faker::FunnyName.name,
         phone: "1" + rand(10 ** 10).to_s,
         address: "fjkfjkdjfdkghkfghk",
-        pic: ["http://lc-dkmjoglx.cn-n1.lcfile.com/6e2021fa0482a3660248/adult-background-casual-941693.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/e1eafefd8c4a5613d655/collared-shirt-handsome-indoors-936229.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/6e2021fa0482a3660248/adult-background-casual-941693.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/db0412837644dd43f597/casual-college-connection-1438081.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/8811e378406628ea7e60/adult-boy-casual-220453.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/2bda7ef20a38f9ffa158/black-leather-jacket-blur-bracelet-775358.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/2f5a7aacd7806a196910/black-and-white-fun-good-looking-91227.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/0a1bd6eb41aa279ac520/adult-blur-boy-1212984.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/43e1be65c974e2ecf365/black-and-white-boy-casual-555790.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/553363eb1328aa17a929/adult-businessman-contemporary-937481.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/a630f99ee72a2ae06261/adult-blurred-background-checkered-shirt-936072.jpg",
-        "https://leancloud.cn/dashboard/data.html?appid=DkmjoGlxMjnfPDQafHuUytF7-gzGzoHsz#/_File",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/9a4de3810d7cea9b95e4/beautiful-brunette-cute-774909.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/6c05381f587df264ca49/attractive-beautiful-beauty-1820574.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/63d660ba66ca43a9852c/attractive-beautiful-casual-1082962.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/e6318fa0eb3d0281980d/adult-beautiful-blond-hair-1130626.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/f5c838a6e2c23fccf610/beautiful-beauty-brazilian-woman-1102341.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/c873d3460f7f5e5eda25/adorable-casual-cute-1752134.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/6cd8fe93b03d1bf56b63/adult-asian-bar-323503.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/4e9c6dd05c943b85882a/beautiful-beauty-blond-1587009.jpg",
-        "http://lc-dkmjoglx.cn-n1.lcfile.com/bf4342d97806d4482039/beautiful-beautiful-woman-beauty-1566554.jpg"].shift,
+        pic: img.shift,
         avg_rating: ((3..4).to_a.sample.to_s + "." + (0..9).to_a.sample.to_s).to_f
     })
     user.save
