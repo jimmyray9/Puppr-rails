@@ -106,7 +106,7 @@ end
             size: ['SMALL', 'MEDIUM', 'LARGE'].sample,
             gender: ['M', 'F'].sample,
             pic: parsed, 
-            owner_id: (a..b).to_a.sample,
+            owner_id: (a..b).to_a.sample
         })
         dog.save
    
