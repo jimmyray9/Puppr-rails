@@ -49,7 +49,7 @@ img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%2
     user = Walker.new({
         name: Faker::FunnyName.name,
         phone: "1" + rand(10 ** 10).to_s,
-        address: "fjkfjkdjfdkghkfghk",
+        address: Faker::Address.full_address,
         pic: img.shift,
         avg_rating: ((3..4).to_a.sample.to_s + "." + (0..9).to_a.sample.to_s).to_f
     })
@@ -59,7 +59,7 @@ end
 20.times do
     user = Owner.create({
         name: Faker::FunnyName.name,
-        address: "sdasdadasdsaa",
+        address: Faker::Address.full_address,
     })
     user.save
     4.times do 
