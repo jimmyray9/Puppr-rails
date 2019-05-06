@@ -28,8 +28,11 @@ class Api::V1::OwnersController < Api::V1::BaseController
   end
 
   def destroy
-    @owner.destroy
-    head :no_content
+    if @owner.destroy
+      puts "success"
+    else 
+      render_error
+    end
   end
 
   private

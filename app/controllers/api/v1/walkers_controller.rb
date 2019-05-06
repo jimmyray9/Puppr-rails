@@ -29,7 +29,7 @@ class Api::V1::WalkersController < Api::V1::BaseController
 
   def destroy
     if @walker.destroy
-      render json: "success"
+      puts "success"
     else 
       render_error
     end
