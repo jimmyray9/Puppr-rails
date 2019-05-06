@@ -1,14 +1,8 @@
 class Api::V1::WalksController < Api::V1::BaseController
     before_action :set_walk, only: [:show, :update, :destroy]
     def index
-      @appointment = Appointment.find(params[:appointment_id])
-      @dog = Dog.find(params[:dog_id])
       @walks = Walk.all
-      @array = []
-      @walks.each do |walk|
-        @array << walk if walk.appointment == @appointment && walk.dog == @dog
-      end
-      render json: @array
+      render json: @walks
     end
   
     def show
