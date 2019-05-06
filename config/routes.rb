@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       post '/login', to: "login#login", as: :login
       post 'owners/:owner_id/dogs/:dog_id/appointments/:appointment_id/walks', to: "walks#create"
       get '/walks', to: "walks#index"
+      get 'dogs/:dog_id/apps', to: "find_apps_by_dogs#apps"
       resources :owners do
         resources :dogs
       end
