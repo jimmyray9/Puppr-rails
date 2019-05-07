@@ -48,15 +48,16 @@ links = ['http://lc-2gbag7yx.cn-n1.lcfile.com/25f00d61bc042b4f3729/pups_19.jpg',
 
 dog_names = ['Max', "BaoBao", "Spike", 'Ya Er', "Asa", "Xue Xue", "Dian dian", "Sparkles", "Dr. Paws", "Thor", "Gui gui", "Bandit", "Daisy", "Buddy", "Charlie", "Bear","Brownie", "Xiao Bai", "Xiao Wang", "Griffin"]
 
+walker_name = ["张吉惟","林国瑞","林玟书","林雅南","江奕云","刘柏宏","阮建安","林子帆","夏志豪","吉茹定","李中冰","黄文隆","谢彦文","傅智翔","洪振霞","刘姿婷","荣姿康","方一强","黎芸贵"]
 20.times do
-    user = Walker.new({
-        name: Faker::FunnyName.name,
+    walker = Walker.new({
+        name: walker_name.shift,
         phone: "1" + rand(10 ** 10).to_s,
         address: location.shift,
         pic: img.shift,
         avg_rating: ((3..4).to_a.sample.to_s + "." + (0..9).to_a.sample.to_s).to_f
     })
-    user.save
+    walker.save
 end
 
 first = Walker.first.id
@@ -79,7 +80,7 @@ last = first + 19
 end
 
 20.times do
-    user = Owner.create({
+    owner = Owner.create({
         name: Faker::FunnyName.name,
         address: location.shift
     })
@@ -87,7 +88,7 @@ end
     a = Owner.first.id
     b = a + 19
 
-    user.save
+    owner.save
     4.times do 
         appointment = Appointment.create({
             walker_id: (first..last).to_a.sample,
