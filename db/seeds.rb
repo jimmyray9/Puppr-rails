@@ -48,7 +48,7 @@ links = ['http://lc-2gbag7yx.cn-n1.lcfile.com/25f00d61bc042b4f3729/pups_19.jpg',
 
 dog_names = ['Max', "BaoBao", "Spike", 'Ya Er', "Asa", "Xue Xue", "Dian dian", "Sparkles", "Dr. Paws", "Thor", "Gui gui", "Bandit", "Daisy", "Buddy", "Charlie", "Bear","Brownie", "Xiao Bai", "Xiao Wang", "Griffin"]
 
-walker_name = ["张吉惟","林国瑞","林玟书","林雅南","江奕云","刘柏宏","阮建安","林子帆","夏志豪","吉茹定","李中冰","黄文隆","谢彦文","傅智翔","洪振霞","刘姿婷","荣姿康","方一强","黎芸贵"]
+walker_name = ["张吉惟","林国瑞","林玟书","林雅南","江奕云","刘柏宏","阮建安","林子帆","夏志豪","吉茹定","李中冰","黄文隆","谢彦文","傅智翔","洪振霞","刘姿婷","荣姿康","方一强","黎芸贵","曹徐坤"]
 20.times do
     walker = Walker.new({
         name: walker_name.shift,
