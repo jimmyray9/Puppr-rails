@@ -13,9 +13,9 @@ Owner.destroy_all
 Appointment.destroy_all
 Dog.destroy_all
 
-url = 'https://dog.ceo/api/breeds/image/random'
-result = open(url).read
-parsed = JSON.parse(result)['message']
+# url = 'https://dog.ceo/api/breeds/image/random'
+# result = open(url).read
+# parsed = JSON.parse(result)['message']
 
 comment_array = ["Great job with my puppy!", "My dog was so happy to get outside. No problems.", "Seemed to love animals and treated my dog so well","Took care of my pup while I was away, definitely knew what they were doing!", "Nice job.", "Had some extra treats for my pup, so sweet!","Was patient with my dog who can be difficult.", "Knew exactly how to treat my dog, will use again!", "Awesome!", "Good job.", "Happy with the service"]
 
@@ -43,6 +43,10 @@ img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%2
 "http://lc-dkmjoglx.cn-n1.lcfile.com/2ce9e41c2174cea45a5e/Screen%20Shot%202019-05-05%20at%206.27.07%20PM.png"]
 
 location = ["四川省成都市青羊长顺上街127号", "成都市武侯区人民南路三段17号", "成都市锦江区迎晖路222号", "成都市锦江区督院街30号", "四川省成都市成华区三环以内二仙桥东三路1号", "四川省成都市青羊区文殊院街66号", "武侯区金花桥街道新苗社区", "成都市成华区崔家店路502号", "四川省成都市金牛区站东路1号", "四川省成都市龙泉驿区成洛大道2025号", "成都市武侯区人民南路三段17号", "四川省成都市锦江区中纱帽街8号", "四川省成都市锦江区春熙路", "四川省成都市青羊区人民中路一段16号省展览馆内(天府广场北侧)", "文庙前街93号", "成都市区青羊区蜀都大道少城路12号", "下东大街199号", "成都市成华区望平街116号", "成都市青羊区金沙遗址路2号", "成都市成华区成都外北熊猫大道1375号","四川省成都市青羊长顺上街127号", "成都市武侯区人民南路三段17号", "成都市锦江区迎晖路222号", "成都市锦江区督院街30号", "四川省成都市成华区三环以内二仙桥东三路1号", "四川省成都市青羊区文殊院街66号", "武侯区金花桥街道新苗社区", "成都市成华区崔家店路502号", "四川省成都市金牛区站东路1号", "四川省成都市龙泉驿区成洛大道2025号", "成都市武侯区人民南路三段17号", "四川省成都市锦江区中纱帽街8号", "四川省成都市锦江区春熙路", "四川省成都市青羊区人民中路一段16号省展览馆内(天府广场北侧)", "文庙前街93号", "成都市区青羊区蜀都大道少城路12号", "下东大街199号", "成都市成华区望平街116号", "成都市青羊区金沙遗址路2号", "成都市成华区成都外北熊猫大道1375号", "四川省成都市青羊长顺上街127号", "成都市武侯区人民南路三段17号", "成都市锦江区迎晖路222号", "成都市锦江区督院街30号", "四川省成都市成华区三环以内二仙桥东三路1号", "四川省成都市青羊区文殊院街66号", "武侯区金花桥街道新苗社区", "成都市成华区崔家店路502号", "四川省成都市金牛区站东路1号", "四川省成都市龙泉驿区成洛大道2025号", "成都市武侯区人民南路三段17号", "四川省成都市锦江区中纱帽街8号", "四川省成都市锦江区春熙路", "四川省成都市青羊区人民中路一段16号省展览馆内(天府广场北侧)", "文庙前街93号", "成都市区青羊区蜀都大道少城路12号", "下东大街199号", "成都市成华区望平街116号", "成都市青羊区金沙遗址路2号", "成都市成华区成都外北熊猫大道1375号"]
+
+links = ['http://lc-2gbag7yx.cn-n1.lcfile.com/25f00d61bc042b4f3729/pups_19.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/30f77d83261472921f7a/pups_20.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/9dd66692d648ecb1ddba/pups_21.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/d0659b800e51fce76996/pups_15.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/decb4682141341a319bb/pups_17.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/940be4b70dfbef0a7b36/pups_18.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/3b2d8755fcfd57365145/pups_11.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/bf8c027558aa69cd102e/pups_14.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/c920709d4b1713bf3454/pups_12.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/be28d3115e52bb7f6440/pups_7.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/7f8cda76ed11c291b1fa/pups_8.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/99eb0c51ab21814fb539/pups_9.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/1149f9fe9829cbbfb7ae/pups_6.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/e673d4df16540528ea52/pups_4.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/28209ceba668b9cc2895/pups_5.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/f22c5d75e3806d9ed7d4/pups_3.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/4852f23628586f1ab88b/pups_0.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/373798dff0f1618da0fd/pups_2.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/0fc9e92d4df633819abe/pups_10.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/68fd8d1a8b51dfbbaa88/pups_16.jpg', 'http://lc-2gbag7yx.cn-n1.lcfile.com/40d96e820b0f01bb449e/pups_13.jpg']
+
+dog_names = ['Max', "BaoBao", "Spike", 'Ya Er', "Asa", "Xue Xue", "Dian dian", "Sparkles", "Dr. Paws", "Thor", "Gui gui", "Bandit", "Daisy", "Buddy", "Charlie", "Bear","Brownie", "Xiao Bai", "Xiao Wang", "Griffin"]
 
 20.times do
     user = Walker.new({
@@ -99,13 +103,13 @@ end
         appointment.save
     end
         dog = Dog.create({
-            name: Faker::Creature::Dog.name,
+            name: dog_names.shift,
             breed: Faker::Creature::Dog.breed,
             age: 1 + rand(17) ,
             description: description_array.sample,
             size: ['SMALL', 'MEDIUM', 'LARGE'].sample,
             gender: ['M', 'F'].sample,
-            pic: parsed, 
+            pic: links.shift, 
             owner_id: (a..b).to_a.sample
         })
         dog.save
