@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       get '/walks', to: "walks#index"
       get '/dogs/:dog_id/apps', to: "find_apps_by_dogs#apps"
       get '/dogs', to: "all_dogs#all"
+      delete '/dogs/:dog_id', to: "all_dogs#destroy"
       resources :owners do
         resources :dogs
       end
