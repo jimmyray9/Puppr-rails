@@ -21,26 +21,26 @@ comment_array = ["Great job with my puppy!", "My dog was so happy to get outside
 
 description_array = ["A bit aggressive at times but overall quite nice!", "Such a sweetie!", "Obeys commands easily.", "She can be a bit naughty at times","Loves to be outside.", "Doesn't really listen well.", "Getting old so go slow", "Puppy full of energy and wants to play!", "Gentle soul", "A bit timid at times"]
                     
-img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/e4ad8c03998aa9e5b243/Screen%20Shot%202019-05-05%20at%206.43.22%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/1b64fdd05bf1fbff51a4/Screen%20Shot%202019-05-05%20at%206.27.53%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/1f2b4c2e65fb070ea791/Screen%20Shot%202019-05-05%20at%206.27.41%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/c8e7201e172bd02ddd2c/Screen%20Shot%202019-05-05%20at%207.09.21%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/d4130a59292a6ae1a208/Screen%20Shot%202019-05-05%20at%206.30.04%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/d3b1aa0ce24b324d4683/Screen%20Shot%202019-05-05%20at%206.29.47%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/487fea340a5bc83d156e/Screen%20Shot%202019-05-05%20at%206.29.35%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/9e0023a8ac2bc1eae48e/Screen%20Shot%202019-05-05%20at%206.29.11%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/6f8f7e270fece71bd7ce/Screen%20Shot%202019-05-05%20at%206.28.51%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/7a94eb80f528f1ca805c/Screen%20Shot%202019-05-05%20at%206.28.21%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/9327c2aa96e7eaebbcdf/Screen%20Shot%202019-05-05%20at%206.28.34%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/f1e82a60631249b6c233/Screen%20Shot%202019-05-05%20at%206.31.24%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/48ded9de17d0644a5527/Screen%20Shot%202019-05-05%20at%206.31.01%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/25d807aad3c3f07b924e/Screen%20Shot%202019-05-05%20at%206.31.14%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/8c3c254278f0e31abe29/Screen%20Shot%202019-05-05%20at%206.30.38%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/25dfc480c1993e53dc35/Screen%20Shot%202019-05-05%20at%206.30.16%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/032c6be2fe015227661c/Screen%20Shot%202019-05-05%20at%206.30.27%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/bf81fa598d3a3d478f23/Screen%20Shot%202019-05-05%20at%206.29.21%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/f51dd195cafa961211a8/Screen%20Shot%202019-05-05%20at%206.28.10%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/2ce9e41c2174cea45a5e/Screen%20Shot%202019-05-05%20at%206.27.07%20PM.png"]
+img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/2c5da14c620f553de326/Screen%20Shot%202019-05-07%20at%207.50.58%20PM.png", 
+"http://lc-dkmjoglx.cn-n1.lcfile.com/697f1c145f7aad5c38b7/Screen%20Shot%202019-05-07%20at%207.52.07%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/4d77e64234dd9f3dfcc0/Screen%20Shot%202019-05-07%20at%207.51.58%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/4b133c8029025223a8d1/Screen%20Shot%202019-05-07%20at%207.51.38%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/0cb1f50d9e2a7ec6a735/Screen%20Shot%202019-05-07%20at%207.51.08%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/1994d39c351b843c6dc7/Screen%20Shot%202019-05-07%20at%207.51.30%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/5e8ed5d4ed87aa7cbf86/Screen%20Shot%202019-05-07%20at%207.51.19%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/818b083fe5b609eefdb6/Screen%20Shot%202019-05-07%20at%207.50.46%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/715e7576abb37c6d1b2b/Screen%20Shot%202019-05-07%20at%207.50.31%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/e45ff77f9543fbc19b4c/Screen%20Shot%202019-05-07%20at%207.52.17%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/6036ae079f650f6b3458/Screen%20Shot%202019-05-07%20at%207.53.34%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/6045be43ea4a06fdef29/Screen%20Shot%202019-05-07%20at%207.53.43%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/5c2dcd4ba32a2617f660/Screen%20Shot%202019-05-07%20at%207.53.27%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/f43aa17445d1f3f4b932/Screen%20Shot%202019-05-07%20at%207.52.50%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/3062542c30820e0e42dd/Screen%20Shot%202019-05-07%20at%207.53.01%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/7bb50d65fa6b14ff1da2/Screen%20Shot%202019-05-07%20at%207.53.17%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/491bfd260db2cdef836b/Screen%20Shot%202019-05-07%20at%207.52.24%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/afd605dc26d8e52d4530/Screen%20Shot%202019-05-07%20at%208.02.01%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/b6f42bed33182bd79716/Screen%20Shot%202019-05-07%20at%208.02.19%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/afc3f8efc9594b1fdb1d/Screen%20Shot%202019-05-07%20at%208.02.29%20PM.png"]
 
 location = ["四川省成都市青羊长顺上街127号", "成都市武侯区人民南路三段17号", "成都市锦江区迎晖路222号", "成都市锦江区督院街30号", "四川省成都市成华区三环以内二仙桥东三路1号", "四川省成都市青羊区文殊院街66号", "武侯区金花桥街道新苗社区", "成都市成华区崔家店路502号", "四川省成都市金牛区站东路1号", "四川省成都市龙泉驿区成洛大道2025号", "成都市武侯区人民南路三段17号", "四川省成都市锦江区中纱帽街8号", "四川省成都市锦江区春熙路", "四川省成都市青羊区人民中路一段16号省展览馆内(天府广场北侧)", "文庙前街93号", "成都市区青羊区蜀都大道少城路12号", "下东大街199号", "成都市成华区望平街116号", "成都市青羊区金沙遗址路2号", "成都市成华区成都外北熊猫大道1375号","四川省成都市青羊长顺上街127号", "成都市武侯区人民南路三段17号", "成都市锦江区迎晖路222号", "成都市锦江区督院街30号", "四川省成都市成华区三环以内二仙桥东三路1号", "四川省成都市青羊区文殊院街66号", "武侯区金花桥街道新苗社区", "成都市成华区崔家店路502号", "四川省成都市金牛区站东路1号", "四川省成都市龙泉驿区成洛大道2025号", "成都市武侯区人民南路三段17号", "四川省成都市锦江区中纱帽街8号", "四川省成都市锦江区春熙路", "四川省成都市青羊区人民中路一段16号省展览馆内(天府广场北侧)", "文庙前街93号", "成都市区青羊区蜀都大道少城路12号", "下东大街199号", "成都市成华区望平街116号", "成都市青羊区金沙遗址路2号", "成都市成华区成都外北熊猫大道1375号", "四川省成都市青羊长顺上街127号", "成都市武侯区人民南路三段17号", "成都市锦江区迎晖路222号", "成都市锦江区督院街30号", "四川省成都市成华区三环以内二仙桥东三路1号", "四川省成都市青羊区文殊院街66号", "武侯区金花桥街道新苗社区", "成都市成华区崔家店路502号", "四川省成都市金牛区站东路1号", "四川省成都市龙泉驿区成洛大道2025号", "成都市武侯区人民南路三段17号", "四川省成都市锦江区中纱帽街8号", "四川省成都市锦江区春熙路", "四川省成都市青羊区人民中路一段16号省展览馆内(天府广场北侧)", "文庙前街93号", "成都市区青羊区蜀都大道少城路12号", "下东大街199号", "成都市成华区望平街116号", "成都市青羊区金沙遗址路2号", "成都市成华区成都外北熊猫大道1375号"]
 
