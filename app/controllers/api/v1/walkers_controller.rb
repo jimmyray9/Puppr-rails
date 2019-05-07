@@ -28,8 +28,11 @@ class Api::V1::WalkersController < Api::V1::BaseController
   end
 
   def destroy
-    @walker.destroy
-    head :no_content
+    if @walker.destroy
+      puts "success"
+    else 
+      render_error
+    end
   end
 
   private
