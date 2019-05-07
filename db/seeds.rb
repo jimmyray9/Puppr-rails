@@ -102,17 +102,17 @@ end
         })
         appointment.save
     end
-        dog = Dog.create({
-            name: dog_names.shift,
-            breed: Faker::Creature::Dog.breed,
-            age: 1 + rand(17) ,
-            description: description_array.sample,
-            size: ['SMALL', 'MEDIUM', 'LARGE'].sample,
-            gender: ['M', 'F'].sample,
-            pic: links.shift, 
-            owner_id: (a..b).to_a.sample
-        })
-        dog.save
+    dog = Dog.create({
+        name: dog_names.shift,
+        breed: Faker::Creature::Dog.breed,
+        age: 1 + rand(17) ,
+        description: description_array.sample,
+        size: ['SMALL', 'MEDIUM', 'LARGE'].sample,
+        gender: ['M', 'F'].sample,
+        pic: links.shift, 
+        owner_id: (a..b).to_a.sample
+    })
+    dog.save
    
 end
 
