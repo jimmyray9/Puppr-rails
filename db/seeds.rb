@@ -20,8 +20,8 @@ Dog.destroy_all
 comment_array = ["Great job with my puppy!", "My dog was so happy to get outside. No problems.", "Seemed to love animals and treated my dog so well","Took care of my pup while I was away, definitely knew what they were doing!", "Nice job.", "Had some extra treats for my pup, so sweet!","Was patient with my dog who can be difficult.", "Knew exactly how to treat my dog, will use again!", "Awesome!", "Good job.", "Happy with the service"]
 
 description_array = ["A bit aggressive at times but overall quite nice!", "Such a sweetie!", "Obeys commands easily.", "She can be a bit naughty at times","Loves to be outside.", "Doesn't really listen well.", "Getting old so go slow", "Puppy full of energy and wants to play!", "Gentle soul", "A bit timid at times"]
-                    
-img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/2c5da14c620f553de326/Screen%20Shot%202019-05-07%20at%207.50.58%20PM.png", 
+       
+img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/afd605dc26d8e52d4530/Screen%20Shot%202019-05-07%20at%208.02.01%20PM.png", 
 "http://lc-dkmjoglx.cn-n1.lcfile.com/697f1c145f7aad5c38b7/Screen%20Shot%202019-05-07%20at%207.52.07%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/4d77e64234dd9f3dfcc0/Screen%20Shot%202019-05-07%20at%207.51.58%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/4b133c8029025223a8d1/Screen%20Shot%202019-05-07%20at%207.51.38%20PM.png",
@@ -38,7 +38,7 @@ img = ["http://lc-dkmjoglx.cn-n1.lcfile.com/2c5da14c620f553de326/Screen%20Shot%2
 "http://lc-dkmjoglx.cn-n1.lcfile.com/3062542c30820e0e42dd/Screen%20Shot%202019-05-07%20at%207.53.01%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/7bb50d65fa6b14ff1da2/Screen%20Shot%202019-05-07%20at%207.53.17%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/491bfd260db2cdef836b/Screen%20Shot%202019-05-07%20at%207.52.24%20PM.png",
-"http://lc-dkmjoglx.cn-n1.lcfile.com/afd605dc26d8e52d4530/Screen%20Shot%202019-05-07%20at%208.02.01%20PM.png",
+"http://lc-dkmjoglx.cn-n1.lcfile.com/2c5da14c620f553de326/Screen%20Shot%202019-05-07%20at%207.50.58%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/b6f42bed33182bd79716/Screen%20Shot%202019-05-07%20at%208.02.19%20PM.png",
 "http://lc-dkmjoglx.cn-n1.lcfile.com/afc3f8efc9594b1fdb1d/Screen%20Shot%202019-05-07%20at%208.02.29%20PM.png"]
 
