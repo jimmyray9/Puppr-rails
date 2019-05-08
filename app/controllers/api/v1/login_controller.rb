@@ -11,8 +11,8 @@ class Api::V1::LoginController < Api::V1::BaseController
     @user = Owner.find_or_create_by(user_id: @open_id)
     render json: { 
       user: @user, 
-      openID: @open_id,
-      userID: @user.id 
+      openId: @open_id,
+      userId: @user.id 
     }
   end
 
