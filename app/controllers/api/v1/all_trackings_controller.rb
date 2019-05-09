@@ -12,4 +12,8 @@ class Api::V1::AllTrackingsController < Api::V1::BaseController
             render_error
         end
     end
+
+    def destroy_all
+        Tracking.destroy_all
+    end
 end

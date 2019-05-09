@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       delete '/dogs/:dog_id', to: "all_dogs#destroy"
       get '/trackings', to: "all_trackings#all"
       delete '/trackings/:tracking_id', to: "all_trackings#destroy"
+      delete '/trackings', to: "all_trackings#destroy_all"
 
       resources :owners do
         resources :dogs
