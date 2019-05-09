@@ -14,6 +14,10 @@ class Api::V1::AllTrackingsController < Api::V1::BaseController
     end
 
     def destroy_all
-        Tracking.destroy_all
+        if Tracking.destroy_all
+            puts "success"
+          else 
+            render_error
+        end
     end
 end
