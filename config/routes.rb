@@ -9,6 +9,9 @@ Rails.application.routes.draw do
       get '/dogs/:dog_id/apps', to: "find_apps_by_dogs#apps"
       get '/dogs', to: "all_dogs#all"
       delete '/dogs/:dog_id', to: "all_dogs#destroy"
+      get '/trackings', to: "all_trackings#all"
+      delete '/trackings/:tracking_id', to: "all_trackings#destroy"
+
       resources :owners do
         resources :dogs
       end
